@@ -5,6 +5,8 @@
 // Initialize a single static instance of all of your subsystems to NULL
 Base* CommandBase::base = NULL;
 OI* CommandBase::oi = NULL;
+BallShooter* CommandBase::shooter = NULL;
+
 
 CommandBase::CommandBase(char const *name) :
 		Command(name)

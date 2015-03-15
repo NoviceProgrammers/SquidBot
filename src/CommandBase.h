@@ -8,6 +8,7 @@
 #include "WPILib.h"
 #include "Subsystems/base.h"
 #include "OI.h"
+#include "Subsystems/ballshooter.h"
 
 /**
  * The base for all commands. All atomic commands should subclass CommandBase.
@@ -24,6 +25,7 @@ public:
 protected:
 	static Base *base;
 	static OI *oi;
+	static BallShooter *shooter;
 
 };
 

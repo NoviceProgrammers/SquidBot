@@ -15,7 +15,10 @@ void cmdJoystickArcadeDrive::Initialize()
 // Called repeatedly when this Command is scheduled to run
 void cmdJoystickArcadeDrive::Execute()
 {
-
+	static int x = 0;
+		if ( (++x % 10) == 0)
+			std::cout << "Arcade " << oi->DriveY() << "," << oi->DriveX() << " ctr: " << x << "\r\n";
+	base->ArcadeDrive( oi->DriveY()*MAX_JOYSTICK_DRIVE, oi->DriveX()*MAX_JOYSTICK_DRIVE );
 }
 
 // Make this return true when this Command no longer needs to run execute()

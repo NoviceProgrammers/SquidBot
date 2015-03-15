@@ -18,8 +18,8 @@
 #define XB360_RIGHT_STICK 10
 
 // Axises, Left Stick, Right stick and the Trigger virtual Axis
-#define XB360_AXIS_LEFT_X	0
-#define XB360_AXIS_LEFT_Y   1
+#define XB360_AXIS_X	0
+#define XB360_AXIS_Y   1
 #define XB360_AXIS_RIGHT_X  4
 #define XB360_AXIS_RIGHT_Y  5
 #define XB360_AXIS_TRIGGER_L  2
