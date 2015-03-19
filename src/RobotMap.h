@@ -21,4 +21,8 @@ const float SHOOT_SPEED_LOW  =0.25;
 const int SOL_LOADER_SHOOT   = 0;
 const int SOL_LOADER_LOAD    = 1;
 
+const int CAN_SPEED_CONTROLLER_RIGHT = 6;
+const int CAN_SPEED_CONTROLLER_LEFT  = 7;
+
+const float MAX_JOYSTICK_DRIVE = 0.65;
 #endif
