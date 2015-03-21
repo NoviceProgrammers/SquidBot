@@ -29,7 +29,7 @@ void Base::InitDefaultCommand()
 
 void Base::ArcadeDrive(float moveValue, float rotateValue)
 {
-	m_drive->ArcadeDrive(float moveValue, float rotateValue, true);
+	m_drive->ArcadeDrive(moveValue,rotateValue, true);
 }
 
 void Base::ArcadeDrive(float moveValue, float rotateValue, int driveIndex)

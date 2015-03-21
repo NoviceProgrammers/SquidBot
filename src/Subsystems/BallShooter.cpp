@@ -6,6 +6,8 @@ BallShooter::BallShooter() :
 {
 	m_BBS = new CANTalon(MOTOR_S_BB);
 	m_Loader = new DoubleSolenoid(SOL_LOADER_SHOOT, SOL_LOADER_LOAD);
+
+	m_BBS ->SetVoltageRampRate(SHOOT_MOTOR_RAMP_RATE);
 }
 void BallShooter::InitDefaultCommand()
 {

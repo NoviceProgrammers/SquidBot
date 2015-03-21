@@ -9,6 +9,7 @@ const int MOTOR_LR_CIM = 3;
 const int MOTOR_RR_CIM = 4;
 
 const double WHEEL_MOTOR_RAMP_RATE = 24.0;
+const double SHOOT_MOTOR_RAMP_RATE = 24.0;
 
 const float FILTER_VALUE = 0.01;
 
