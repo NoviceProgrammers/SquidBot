@@ -13,7 +13,6 @@ public:
 	Base();
 	void InitDefaultCommand();
 	void ArcadeDrive(float moveValue, float rotateValue);
-	void ArcadeDrive(float moveValue, float rotateValue, int driveIndex);
 };
 
 #endif
