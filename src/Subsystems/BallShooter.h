@@ -15,6 +15,8 @@ public:
 	void ShootBallHigh();
 	void ShootBallMed();
 	void ShootBallLow();
+	void ExtendDoubleArms();
+	void RetractDoubleArms();
 };
 
 #endif

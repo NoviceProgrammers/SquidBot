@@ -14,8 +14,12 @@ Base::Base() :
 	m_LR->SetVoltageRampRate(WHEEL_MOTOR_RAMP_RATE);
 	m_RR->SetVoltageRampRate(WHEEL_MOTOR_RAMP_RATE);
 
+	//m_LF = frontLeftMotor;
+	//m_RF = frontRightMotor;
+	//m_LR = rearLeftMotor;
+//	m_RR = rearRightMotor;
 
-	m_Drive = new RobotDrive(m_LF, m_RF, m_LR, m_RR);
+	m_drive = new RobotDrive(m_LF, m_RF, m_LR, m_RR);
 }
 
 void Base::InitDefaultCommand()
@@ -25,7 +29,7 @@ void Base::InitDefaultCommand()
 
 void Base::ArcadeDrive(float moveValue, float rotateValue)
 {
-	m_Drive->ArcadeDrive( moveValue, rotateValue, true);
+	m_drive->ArcadeDrive(float moveValue, float rotateValue, true);
 }
 
 void Base::ArcadeDrive(float moveValue, float rotateValue, int driveIndex)

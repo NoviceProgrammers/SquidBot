@@ -3,8 +3,8 @@
 #include "xb360map.h"
 #include "Commands/cmdJoystickArcadeDrive.h"
 #include "Commands/cmdShootBallHigh.h"
-#include "Commands/cmdShootBallMed.h"
 #include "Commands/cmdShootBallLow.h"
+#include "Commands/cmdShootBallMed.h"
 
 OI::OI()
 {

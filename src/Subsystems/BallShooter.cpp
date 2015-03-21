@@ -27,5 +27,15 @@ void BallShooter::ShootBallLow()
 {
 	m_BBS -> Set(SHOOT_SPEED_LOW);
 }
+
+void BallShooter::ExtendDoubleArms()
+{
+	m_Loader->Set(DoubleSolenoid::kForward);
+}
+
+void BallShooter::RetractDoubleArms()
+{
+	m_Loader->Set(DoubleSolenoid::kReverse);
+}
 // Put methods for controlling this subsystem
 // here. Call these from Commands.
